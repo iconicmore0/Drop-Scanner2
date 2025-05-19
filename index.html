@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Airdrop Scanner Mobile</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #000000, #004d00, #8B0000, #00008B);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      color: #ffffff;
+    }
+
+    @keyframes gradient {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    header {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-bottom: 2px solid #00ff00;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #00ff00;
+    }
+
+    .scanner-section {
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .result-card {
+      background-color: rgba(255, 255, 255, 0.05);
+      margin: 1rem auto;
+      padding: 1rem;
+      border-radius: 12px;
+      max-width: 600px;
+      box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    }
+
+    .label {
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+
+    .label.recommended {
+      background-color: #00cc00;
+    }
+
+    .label.notbad {
+      background-color: #cccc00;
+    }
+
+    .label.norecommend {
+      background-color: #cc0000;
+    }
+
+    .source-links {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    .source-links a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+
+    .source-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Airdrop Scanner Mobile</h1>
+    <p>Mendeteksi kualitas airdrop secara cepat dan akurat</p>
+  </header>
+
+  <section class="scanner-section">
+    <div class="result-card">
+      <span class="label recommended">🟢 Recommended</span>
+      <p><strong>Project:</strong> 0G Labs</p>
+      <p><strong>Deskripsi:</strong> Project dengan infrastruktur kuat, aktivitas komunitas aktif, potensi insentif tinggi dari investor besar dan roadmap yang jelas. Dukungan dari komunitas kripto terpercaya seperti a16z, LayerZero, dan Celestia.</p>
+      <div class="source-links">
+        <p>Telusuri lebih lanjut:</p>
+        <a href="https://0g.ai" target="_blank">Website resmi</a> | 
+        <a href="https://twitter.com/0G_labs" target="_blank">Twitter</a> | 
+        <a href="https://discord.gg/0glabs" target="_blank">Discord</a>
+      </div>
+    </div>
+
+    <div class="result-card">
+      <span class="label notbad">🟡 Not Bad</span>
+      <p><strong>Project:</strong> Kite AI</p>
+      <p><strong>Deskripsi:</strong> Cukup menjanjikan untuk eksplorasi AI berbasis blockchain. Namun tokenomik dan model monetisasi belum transparan. Potensi baik namun perlu kehati-hatian.</p>
+      <div class="source-links">
+        <p>Telusuri lebih lanjut:</p>
+        <a href="https://kiteai.io" target="_blank">Website resmi</a> | 
+        <a href="https://twitter.com/kite_ai" target="_blank">Twitter</a> | 
+        <a href="https://discord.gg/kiteai" target="_blank">Discord</a>
+      </div>
+    </div>
+
+    <div class="result-card">
+      <span class="label norecommend">🔴 No Recommended</span>
+      <p><strong>Project:</strong> Common</p>
+      <p><strong>Deskripsi:</strong> Tidak ada whitepaper, aktivitas media sosial rendah, komunitas pasif. Potensi scam atau proyek tidak berkelanjutan.</p>
+      <div class="source-links">
+        <p>Telusuri lebih lanjut:</p>
+        <a href="https://common.site" target="_blank">Website resmi</a> | 
+        <a href="https://twitter.com/common_xyz" target="_blank">Twitter</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
